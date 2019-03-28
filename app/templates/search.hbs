@@ -1,0 +1,11 @@
+Test text
+<ul>
+  {{#each searchResults}}
+    <li>
+      <b>{{song.artist}} - {{song.title}} </b><br>
+      Released: {{song.year}} <br>
+      Genre: {{song.genre}} <br>
+      Lyrics:<br> "{{song.lyrics}}"<br><br>
+   </li>
+  {{/each}}
+</ul>

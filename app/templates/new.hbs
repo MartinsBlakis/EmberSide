@@ -1,0 +1,16 @@
+<div class="col-md-4">
+        <h1>Add song to the database</h1>
+
+        <form {{action 'save' on="submit"}}>
+
+        <dl>
+        <dt>Title:<br> {{textarea value=title cols="80" rows="1"}}</dt>
+        <dt>Artist<br> {{textarea value=artist cols="80" rows="1"}}</dt>
+        <dt>Genre:<br> {{textarea value=genre cols="80" rows="1"}}</dt>
+        <dt>Year<br> {{textarea value=year cols="80" rows="1"}}</dt>
+        <dt>Lyrics:<br> {{textarea value=lyrics cols="80" rows="6"}}</dt>
+
+        </dl>
+        <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+</div>

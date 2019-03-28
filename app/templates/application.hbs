@@ -1,5 +1,27 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<div class="container">
+
+  <div class="menu">
+
+      <h1>
+        Find songs by lyrics
+      </h1>
+
+
+    <div class="left links">
+      <h2>
+        {{#link-to 'song' class="button"}}All songs{{/link-to}}
+        {{#link-to 'about' class="button"}}About us{{/link-to}}
+        {{#link-to 'new' class="button"}}Add song{{/link-to}}
+      </h2>
+    </div>
+  </div>
+
+  <div class="body">
+    {{outlet}}
+  </div>
+
+
+  <p class="footer"> footer space with trademarks</p>
+</div>

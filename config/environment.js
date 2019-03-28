@@ -2,6 +2,9 @@
 
 module.exports = function(environment) {
   let ENV = {
+    contentSecurityPolicy: {
+     'connect-src' : "'self' http://localhost:4500"
+    },
     modulePrefix: 'ember-js',
     environment,
     rootURL: '/',

@@ -1,0 +1,18 @@
+
+<div class="col-md-4">
+    <h2> Edit Song</h2>
+    <form {{action 'save' on="submit"}}>
+        <dl>
+            <dt><p>Title:</p> {{textarea value=model.title cols="20" rows="1"}}</dt>
+            <dt><p>Artist:</p> {{textarea value=model.artist cols="20" rows="1"}}</dt>
+            <dt><p>Genre:</p> {{textarea value=model.genre cols="20" rows="1"}}</dt>
+            <dt><p>Year:</p> {{textarea value=model.year cols="20" rows="1"}}</dt>
+            <dt><p>Lyrics:</p> {{textarea value=model.lyrics cols="40" rows="8"}}</dt>
+        </dl>
+        <div class="row">
+            <button type="submit" class="btn btn-primary">Done</button>
+            <button type="delete" class="btn btn-primary" {{action 'del' on='click'}}>Delete</button>
+        </div>
+    </form>
+
+</div>

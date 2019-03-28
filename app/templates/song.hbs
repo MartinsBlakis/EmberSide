@@ -1,0 +1,26 @@
+{{outlet}}
+<div>
+  <h2>
+    <form {{action 'searchSong' on='submit'}}>
+      {{input type='text' value=keyword}}
+      {{input type='submit' value='Find'}}
+    </form>
+
+  </h2>
+</div>
+<div>
+  Songs on database:
+  <ul>
+    {{#each model as |song|}}
+      <li>
+        <b>{{song.artist}} - {{song.title}}  {{#link-to 'edit' song.id}}EDIT{{/link-to}} </b><br>
+        ID:<i>{{song._id}}</i> <br>
+        Released: {{song.year}} <br>
+        Genre: {{song.genre}} <br>
+        Lyrics:<br> "{{song.lyrics}}"<br><br>
+       </li>
+    {{/each}}
+
+    <br/>
+  </ul>
+</div>
